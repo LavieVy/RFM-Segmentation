@@ -1,0 +1,168 @@
+productId,productName,price
+1,tropical fruit,7.803532318
+2,whole milk,1.8
+3,pip fruit,3
+4,other vegetables,0.8
+5,rolls/buns,1.2
+6,pot plants,3.5
+7,citrus fruit,1.5
+8,beef,19.5
+9,frankfurter,5.5
+10,chicken,7.2
+11,butter,3.2
+12,fruit/vegetable juice,2.1
+13,packaged fruit/vegetables,3.5
+14,chocolate,11.5
+15,specialty bar,5.2
+16,butter milk,6.1
+17,bottled water,0.5
+18,yogurt,2.2
+19,sausage,3.1
+20,brown bread,0.8
+21,hamburger meat,12.3
+22,root vegetables,1.8
+23,pork,7.2
+24,pastry,3.1
+25,canned beer,1.1
+26,berries,10.8
+27,coffee,8.5
+28,misc. beverages,1.2
+29,ham,15.2
+30,turkey,12.5
+31,curd cheese,9.2
+32,red/blush wine,12.2
+33,frozen potato products,3
+34,flour,2.1
+35,sugar,1.2
+36,frozen meals,9.7
+37,herbs,6.5
+38,soda,0.8
+39,detergent,5.5
+40,grapes,9.4
+41,processed cheese,6.4
+42,fish,10.2
+43,sparkling wine,12.5
+44,newspapers,3.2
+45,curd,9.8
+46,pasta,3.1
+47,popcorn,2.4
+48,finished products,6.5
+49,beverages,1.1
+50,bottled beer,1.8
+51,dessert,1.15
+52,dog food,12.6
+53,specialty chocolate,18.8
+54,condensed milk,3.5
+55,cleaner,11.8
+56,white wine,14.2
+57,meat,8.5
+58,ice cream,1.8
+59,hard cheese,4.5
+60,cream cheese ,6.3
+61,liquor,8.5
+62,pickled vegetables,2.7
+63,liquor (appetizer),11.2
+64,UHT-milk,2.1
+65,candy,3.6
+66,onions,1.3
+67,hair spray,5.4
+68,photo/film,11.9
+69,domestic eggs,1.25
+70,margarine,3.5
+71,shopping bags,5.12
+72,salt,0.7
+73,oil,3.4
+74,whipped/sour cream,5.5
+75,frozen vegetables,2.5
+76,sliced cheese,4.2
+77,dish cleaner,2.5
+78,baking powder,1.8
+79,specialty cheese,12.14
+80,salty snack,0.5
+81,Instant food products,0.6
+82,pet care,5.8
+83,white bread,0.3
+84,female sanitary products,2.5
+85,cling film/bags,2.2
+86,soap,3.8
+87,frozen chicken,3.5
+88,house keeping products,8.5
+89,spread cheese,2.5
+90,decalcifier,2.8
+91,frozen dessert,2.8
+92,vinegar,1.5
+93,nuts/prunes,6.2
+94,potato products,2.8
+95,frozen fish,5.8
+96,hygiene articles,7.5
+97,artif. sweetener,2.1
+98,light bulbs,5.7
+99,canned vegetables,5.7
+100,chewing gum,0.5
+101,canned fish,2.1
+102,cookware,4.6
+103,semi-finished bread,1.1
+104,cat food,11.2
+105,bathroom cleaner,5.8
+106,prosecco,20.1
+107,liver loaf,8.5
+108,zwieback,12.3
+109,canned fruit,4.96
+110,frozen fruits,2.5
+111,brandy,15.8
+112,baby cosmetics,25.5
+113,spices,1.2
+114,napkins,21.8
+115,waffles,2.5
+116,sauces,2.45
+117,rum,5.2
+118,chocolate marshmallow,4.13
+119,long life bakery product,9.9
+120,bags,19.5
+121,sweet spreads,5.4
+122,soups,4.5
+123,mustard,5.2
+124,specialty fat,4.5
+125,instant coffee,4.9
+126,snack products,0.9
+127,organic sausage,8.6
+128,soft cheese,7.2
+129,mayonnaise,1.8
+130,dental care,11.45
+131,roll products ,8.6
+132,kitchen towels,4.83
+133,flower soil/fertilizer,2.83
+134,cereals,4.5
+135,meat spreads,7.8
+136,dishes,6.8
+137,male cosmetics,10.6
+138,candles,2.7
+139,whisky,28.5
+140,tidbits,1.1
+141,cooking chocolate,7.2
+142,seasonal products,5.4
+143,liqueur,9.5
+144,abrasive cleaner,6.38
+145,syrup,4.3
+146,ketchup,1.25
+147,cream,5.2
+148,skin care,10.3
+149,rubbing alcohol,2.5
+150,nut snack,4.9
+151,cocoa drinks,2.1
+152,softener,11.8
+153,organic products,9.4
+154,cake bar,2.4
+155,honey,9.7
+156,jam,5.22
+157,kitchen utensil,8.1
+158,flower (seeds),6.8
+159,rice,11.1
+160,tea,8.7
+161,salad dressing,5.9
+162,specialty vegetables,6.5
+163,pudding powder,4.9
+164,ready soups,3.9
+165,make up remover,3.4
+166,toilet cleaner,4.9
+167,preservation products,6.75
