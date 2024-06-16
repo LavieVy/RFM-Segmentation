@@ -603,6 +603,8 @@ elif choice == 'Phân cụm khách hàng':
             ax.set_ylabel('Gross Sales')
             ax.set_xlabel('Date')
             ax.set_title('Sales Over Time')
+            # Đặt các nhãn x-tick chéo
+            ax.set_xticklabels(ax.get_xticks(), rotation=45)
             st.pyplot(fig)
 
             # Sales by product
