@@ -491,19 +491,20 @@ elif choice == 'Phân cụm khách hàng':
     # Phần xem tổng quan dữ liệu
     st.header('Phân cụm khách hàng')
     st.subheader('Data Overview')
-    st.subheader('Products')
-    col1, col2 = st.columns(2)
+    col1, col2 , col3, col4 = st.columns(4)
     col1.metric(label="Rows", value=products.shape[0])
-    col2.metric(label="Columns", value=products.shape[1])  
-    st.write('Samples of Products data')
-    st.dataframe(products.sample(5))
-
-    st.subheader('Transactions')
-    col1, col2 = st.columns(2)
-    col1.metric(label="Rows", value=transactions.shape[0])
-    col2.metric(label="Columns", value=transactions.shape[1]) 
-    st.write('Samples of Transactions data')
-    st.dataframe(transactions.sample(5))
+    col2.metric(label="Columns", value=products.shape[1])
+    col3.metric(label="Rows", value=transactions.shape[0])
+    col4.metric(label="Columns", value=transactions.shape[1]) 
+    left_co, last_co = st.columns(2)
+    with left_co:
+        st.subheader('Products')
+        st.write('Samples of Products data')
+        st.dataframe(products.sample(5))
+    with last_co:
+        st.subheader('Transactions')
+        st.write('Samples of Transactions data')
+        st.dataframe(transactions.sample(5))
         
     st.subheader('Kết quả phân vùng của khách hàng theo RFM')
     st.write('Download file csv đã phân nhóm khách hàng theo RFM')
