@@ -507,8 +507,9 @@ elif choice == 'Phân cụm khách hàng':
         st.dataframe(transactions.sample(5))
         
     st.subheader('Kết quả phân vùng của khách hàng theo RFM sau khi tinh chỉnh mô hình')
-    st.write("Loại bỏ những nhóm không có đặc trưng rất nổi bật (gộp vào regular), tinh chỉnh thành phân loại thành 9 loại: 'LOYAL', 'CHAMP', 'CANT_LOSE', 'RISK', 'POT_LOYAL', 'REGULAR',
-       'PROMISING', 'LOST', 'NEW'")
+    st.markdown('''Loại bỏ những nhóm không có đặc trưng rất nổi bật (gộp vào regular), tinh chỉnh thành phân loại thành 9 loại: 'LOYAL', 'CHAMP', 'CANT_LOSE', 'RISK', 'POT_LOYAL', 'REGULAR',
+       'PROMISING', 'LOST', 'NEW'
+       ''')
     st.write('Download file csv đã phân nhóm khách hàng theo RFM')
     csv = df_RFM_rule.to_csv(index=False).encode('utf-8')
     st.download_button(
