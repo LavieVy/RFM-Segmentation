@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run new.py
+web: sh setup.sh && streamlit run RFM_Segment_App.py
