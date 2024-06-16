@@ -603,9 +603,7 @@ elif choice == 'Phân cụm khách hàng':
             ax.set_ylabel('Gross Sales')
             ax.set_xlabel('Date')
             ax.set_title('Sales Over Time')
-            # Đặt các nhãn x-tick chéo
-            ax.set_xticklabels(rotation=45)
-
+            plt.xticks(rotation=45, ha='right')
             st.pyplot(fig)
 
             # Sales by product
@@ -697,13 +695,14 @@ elif choice == 'Tra phân cụm khách hàng':
             number = st.number_input('Nhập số khách hàng cần phân cụm', 1,10,1,1)
             for i in range(number):
                 st.write(f"Khách hàng {i+1}")
-                # Tạo các slider để nhập giá trị cho cột Recency, Frequency, Monetary
-                recency = st.slider("Recency", 1, df_RFM['Recency'].max(), 100, key=f"recency_{i}")
-                frequency = st.slider("Frequency", 1, 50, 5, key=f"frequency_{i}")
-                monetary = st.slider("Monetary", 1, 500, 100, key=f"monetary_{i}")
-                # Cũng có thể thay bằng các điều khiển khác như number_input...
+    
+                # Tạo các number_input để nhập giá trị cho cột Recency, Frequency, Monetary
+                recency = st.number_input("Recency", min_value=1, max_value=int(df_RFM['Recency'].max()), value=100, key=f"recency_{i}")
+                frequency = st.number_input("Frequency", min_value=1, max_value=50, value=5, key=f"frequency_{i}")
+                monetary = st.number_input("Monetary", min_value=1.0, max_value=500.0, value=100.0, key=f"monetary_{i}")
+    
                 # Thêm thông tin khách hàng vừa nhập vào dataframe
-                df_customer = df_customer.append({"Recency": recency, "Frequency": frequency, "Monetary": monetary}, ignore_index=True)            
+            df_customer = df_customer.append({"Recency": recency, "Frequency": frequency, "Monetary": monetary}, ignore_index=True)
             # Thực hiện phân cụm khách hàng dựa trên giá trị của 3 cột này
                     # In kết quả ra màn hình
             st.write("Dữ liệu đã nhập:")
