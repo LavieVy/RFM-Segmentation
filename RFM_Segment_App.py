@@ -680,6 +680,7 @@ elif choice == 'Tra phân cụm khách hàng':
         user_data.groupby('Date')['gross_sales'].sum().plot(ax=ax, style='o-')
         ax.set_ylabel('Gross Sales')
         ax.set_xlabel('Date')
+        plt.xticks(rotation=45, ha='right')
         st.pyplot(fig7)
 
         st.subheader(f'Sales by Product for Member {member_number}')
