@@ -404,7 +404,7 @@ elif choice == 'Xây dựng mô hình':
 Hàm này giúp doanh nghiệp hiểu rõ hơn về cơ sở khách hàng của mình và phân loại họ dựa trên các hành vi mua sắm gần đây để áp dụng các chiến lược marketing phù hợp.
                     ''')
         st.image("IMG/RFM rule Segments11.png")
-        st.image("IMG/Histograms Segmented by RFM rule RFM_level11.png")
+        st.image("IMG/Histograms_Segmented_by_RFM_rule_RFM_level.png")
         st.image("IMG/RFM Rule scatter 2d11.png")
         st.image("IMG/RFM Rule scatter 3d11.png")
 #----------------------------------------------------------------------------------------------------
