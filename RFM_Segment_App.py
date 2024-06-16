@@ -958,7 +958,7 @@ elif choice == 'Tra phân cụm khách hàng':
                     plt.ylabel('Monetary')
 
                     # Display the plot in Streamlit
-                    st.pyplot(fig13)
+                    st.pyplot(plt.gcf())
                     
                     fig14 = px.scatter_3d(df_customer, x='Recency', y='Frequency', z='Monetary',
                                     color='RFM_Level', opacity = 0.7, title='RFM Rule  segments 3D Scatter plot')
