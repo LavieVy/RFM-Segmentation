@@ -680,13 +680,12 @@ elif choice == 'Tra phân cụm khách hàng':
         st.write('''
     Hướng dẫn: Chọn phương thức nhập liệu, nhập liệu và dự đoán
     ''')
-        menu2 = ["Nhập một bình luận", "Nhập nhiều dòng dữ liệu trực tiếp", 
+        menu2 = ["Nhập nhiều dòng dữ liệu trực tiếp", 
             "Đăng tệp Excel", "Đăng tệp CSV"]
         choice2 = st.selectbox("Phương thức nhập liệu",menu2)
-        if choice2 == "Nhập một bình luận":
-            comment = st.text_input('Nhập vào một bình luận')
+
             
-        elif choice2 == "Nhập nhiều dòng dữ liệu trực tiếp":
+        if choice2 == "Nhập nhiều dòng dữ liệu trực tiếp":
             st.subheader("Nhập nhiều dòng dữ liệu trực tiếp")        
             
              # Tạo dataframe để người dùng nhập thông tin khách hàng
