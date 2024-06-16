@@ -5,3 +5,4 @@ plotly
 squarify
 matplotlib
 seaborn
+openpyxl
