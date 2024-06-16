@@ -507,7 +507,7 @@ elif choice == 'Phân cụm khách hàng':
         st.dataframe(transactions.sample(5))
         
     st.subheader('Kết quả phân vùng của khách hàng theo RFM sau khi tinh chỉnh mô hình')
-    st.markdown('''Tính quantiles dựa trên data loại bỏ outlier, dán nhãn trên toàn bộ data, điều chỉnh RRM_Level function với việc loại bỏ những nhóm không có đặc trưng rất nổi bật (gộp vào regular), phân loại thành 9 loại: 'LOYAL', 'CHAMP', 'CANT_LOSE', 'RISK', 'POT_LOYAL', 'REGULAR',
+    st.markdown('''Tính quantiles dựa trên data loại bỏ outlier, dán nhãn trên toàn bộ data, điều chỉnh rfm_level function với việc loại bỏ những nhóm không có đặc trưng rất nổi bật (gộp vào regular), phân loại thành 9 loại: 'LOYAL', 'CHAMP', 'CANT_LOSE', 'RISK', 'POT_LOYAL', 'REGULAR',
        'PROMISING', 'LOST', 'NEW'
        ''')
     st.write('Download file csv đã phân nhóm khách hàng theo RFM')
