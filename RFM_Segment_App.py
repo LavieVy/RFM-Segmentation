@@ -608,7 +608,7 @@ elif choice == 'Phân cụm khách hàng':
 
     # Adjusting layout to prevent overlapping
     plt.tight_layout()
-    st.plotly_chart(fig3)
+    st.pyplot(fig3)
 
     
     rfm_levels = df_RFM_rule['RFM_Level'].unique()
