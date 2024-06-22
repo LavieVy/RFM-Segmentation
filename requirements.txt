@@ -1,6 +1,6 @@
 ﻿streamlit
-pandas==1.5.3
 numpy
+pandas==1.5.3
 plotly
 squarify
 matplotlib
