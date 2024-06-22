@@ -591,10 +591,10 @@ elif choice == 'Phân cụm khách hàng':
     # Get unique clusters and features
     clusters = df_RFM_rule['RFM_Level'].unique()
     features = ['Recency', 'Frequency', 'Monetary']
-
+    
     # Set up subplots with a rectangular layout
-    fig3, axes = plt.subplots(3, df_RFM_rule['RFM_Level'].nunique(), figsize=(30, 10))
-
+    fig3, axes = plt.subplots(len(features), len(clusters), figsize=(30, 10))
+    
     # Loop through features and clusters
     for i, feature in enumerate(features):
         for j, cluster in enumerate(clusters):
@@ -602,14 +602,14 @@ elif choice == 'Phân cụm khách hàng':
             data = df_RFM_rule[df_RFM_rule['RFM_Level'] == cluster][feature]
             
             # Plot histogram for the current cluster and feature
-            axes[i, j].hist(data, bins=20, color=colors[j], edgecolor='w', alpha=0.7)
+            axes[i, j].hist(data, bins=20, color=colors_dict[cluster], edgecolor='w', alpha=0.7)
             axes[i, j].set_title(f'{cluster} \n {feature}', fontsize=15)
             axes[i, j].set_xlabel('')
             axes[i, j].set_ylabel('')
-
+    
     # Add a title to the entire plot
     plt.suptitle('Segments RFM Histograms - RFM_level', fontsize=20)
-
+    
     # Adjusting layout to prevent overlapping
     plt.tight_layout()
     st.pyplot(fig3)
