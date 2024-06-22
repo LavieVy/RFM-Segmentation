@@ -1,3 +1,4 @@
+﻿streamlit
 pandas==1.5.3
 numpy
 plotly
@@ -5,4 +6,4 @@ squarify
 matplotlib
 seaborn
 openpyxl
-﻿streamlit
+
