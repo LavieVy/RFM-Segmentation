@@ -47,7 +47,7 @@ def validate_data(products, transactions):
     
     return True, None
 def calculate_rfm(transactions, products):
-    transactions['Date'] = pd.to_datetime(transactions['Date'], format='%d-%m-%Y')
+    transactions['Date'] = pd.to_datetime(transactions['Date'], format='%d-%m-%Y', errors='coerce')
     df = transactions.merge(products, on='productId')
     df = df.drop_duplicates()
     df = df.dropna()
